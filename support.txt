@@ -1,0 +1,45 @@
+video_asthetic = document.querySelector('.vid');
+para_content = document.querySelector('.para');
+
+let currentTimeVideo = 0;
+let speed = 0.1;
+let acceleration = 1;
+let retardation = 1;
+let video_value = false;
+
+window.addEventListener('keydown', (e) => {
+    console.log(e);
+    switch (e.key) {
+        case "ArrowUp":
+            console.log('Up');
+            if (video_value) {
+                acceleration += 0.1;
+            } else {
+                acceleration = 1
+            }
+            currentTimeVideo += speed * acceleration;
+            if (currentTimeVideo > 58) {
+                currentTimeVideo = 0;
+            } break;
+
+        case "ArrowDown":
+            console.log('Down');
+            if (video_value) {
+                acceleration += 0.1;
+            } else {
+                acceleration = 1
+            }
+            if (video_asthetic.currentTime <= 0) {
+                retardation = 1;
+                break;
+            }
+            else {
+                currentTimeVideo -= speed * retardation;
+            }
+    }
+    console.log("acceleration" + acceleration);
+    console.log("retardation" + retardation);
+    video_asthetic.currentTime = currentTimeVideo;
+    console.log(currentTimeVideo);
+    console.log(video_asthetic.currentTime);
+})
