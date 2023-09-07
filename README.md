@@ -1,5 +1,7 @@
 # SCROLL-ANIMATION-SMOOTH
 
+https://github.com/ANSHPG/SCROLL-ANIMATION-SMOOTH/assets/132222062/e20fd4f1-0661-4dde-928e-1c009860721d
+
 Overview:
 
 This repository contains a captivating scroll animation project that seamlessly integrates HTML, CSS, and JavaScript to create an immersive web experience. In this project, we've implemented a scroll-controlled video animation where the video's playback progresses forward as you scroll down and rewinds as you scroll up. The twist? We've hidden the video controls to maintain a clean and sleek design, focusing solely on the animation.
